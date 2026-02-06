@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 textarea,
 select,
@@ -20,7 +24,8 @@ body {
 
 a {
   text-decoration: none;
-  color: inheri;
+  color: inherit;
+  cursor: pointer;
 }
 
 ul {

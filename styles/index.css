@@ -1,1 +1,121 @@
 @import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Viga&display=swap');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.header {
+  background-image: url(../assets/img/header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100dvh;
+  width: 100%;
+  .header_top,
+  .links_wrapper,
+  .social_links,
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+  .header_top {
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20%;
+    img {
+      height: 60px;
+      width: auto;
+    }
+    .links_wrapper {
+      justify-content: space-between;
+      gap: 45px;
+      nav {
+        ul {
+          gap: 16px;
+          li {
+            font-size: 20px;
+            text-transform: uppercase;
+            a:hover {
+              color: #AF8548;
+            }
+          }
+        }
+      }
+      .social_links {
+        gap: 30px;
+        img {
+          cursor: pointer;
+          height: 24px;
+          width: auto;
+          &:hover {
+            filter: drop-shadow(0px 0px 4px #fff)
+          }
+        }
+      }
+    }
+  }
+  h1 {
+    font-size: 84px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .header_main_btn {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #AF8548;
+    border: 1px solid #AF8548;
+    cursor: pointer;
+    border-radius: 1px;
+    &:hover {
+      background-color: #e2b46f;
+      ;
+    }
+  }
+}
+
+.categories {
+  background-color: #000;
+  padding: 80px;
+  .categories_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .category-item {
+      cursor: pointer;
+      h3 {
+        font-size: 26px;
+        font-style: normal;
+        text-transform: uppercase;
+        color: #AF8548;
+        margin-bottom: 8px;
+      }
+      img {
+        height: 300px;
+        width: 300px;
+      }
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
+  }
+}
